@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZELLART — Handmade Zellige from Fez</title>
+  <meta name="description" content="Handmade Zellige tables and small fountains, shaped one tile at a time in Fez, Morocco." />
+
+  <link rel="icon" href="images/logo-head.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Top bar -->
+  <div class="topbar" data-site="topbar"></div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="brand">
+        <img src="images/logo.jpeg" alt="ZELLART" class="brand-logo" />
+        <span class="brand-name">ZELLART</span>
+      </a>
+
+      <nav class="nav-desktop" aria-label="Main navigation">
+        <a href="#collection" class="nav-link">Collection</a>
+        <a href="#atelier" class="nav-link">The atelier</a>
+        <a href="#bespoke" class="nav-link">Bespoke</a>
+      </nav>
+
+      <a class="btn btn-primary whatsapp-btn" data-wa="header" target="_blank" rel="noreferrer">
+        Start a conversation
+      </a>
+
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 5h16M4 12h16M4 19h16"/></svg>
+      </button>
+    </div>
+
+    <nav class="nav-mobile" aria-label="Mobile navigation" hidden>
+      <a href="#collection">Collection</a>
+      <a href="#atelier">The atelier</a>
+      <a href="#bespoke">Bespoke</a>
+      <a data-wa="mobile" target="_blank" rel="noreferrer">WhatsApp the studio</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="hero container">
+    <div class="hero-text reveal">
+      <div class="eyebrow"><span class="line"></span><span data-site="hero.eyebrow"></span></div>
+      <h1 class="hero-title" data-site="hero.title"></h1>
+      <p class="hero-sub" data-site="hero.subtitle"></p>
+
+      <div class="hero-actions">
+        <a href="#collection" class="btn btn-primary">
+          Explore the collection
+        </a>
+        <a href="#atelier" class="btn btn-ghost">
+          Our process
+        </a>
+      </div>
+
+      <div class="hero-stats" data-site="hero.stats"></div>
+    </div>
+
+    <div class="hero-visual reveal reveal-delay-1">
+      <div class="hero-arc image-wrap">
+        <img src="images/fez-round.jpg" alt="Round turquoise Zellige mosaic table" />
+      </div>
+      <div class="hero-badge">
+        <img src="images/pattern-1.jpg" alt="Cobalt Zellige star pattern" />
+      </div>
+      <div class="hero-caption">
+        <span class="vertical-label">Every tile has a story</span>
+        <span class="vline"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Collection -->
+  <section id="collection" class="section section-cream">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow-text" data-site="collection.eyebrow"></span>
+          <h2 class="section-title" data-site="collection.title"></h2>
+        </div>
+        <p class="section-note" data-site="collection.note"></p>
+      </div>
+
+      <div class="filters reveal">
+        <button class="filter-btn active" data-filter="All">All</button>
+        <button class="filter-btn" data-filter="Tables">Tables</button>
+        <button class="filter-btn" data-filter="Fountains">Fountains</button>
+        <span class="filter-count" data-filter-count></span>
+      </div>
+
+      <div class="product-grid" data-products></div>
+    </div>
+  </section>
+
+  <!-- Atelier -->
+  <section id="atelier" class="section section-ink">
+    <div class="container atelier-grid">
+      <div class="reveal">
+        <span class="eyebrow-text light" data-site="atelier.eyebrow"></span>
+        <div class="image-wrap atelier-image">
+          <img src="images/atelier.jpg" alt="Zellige artisan assembling tiles" />
+        </div>
+        <p class="atelier-caption" data-site="atelier.caption"></p>
+      </div>
+
+      <div class="reveal reveal-delay-1">
+        <h2 class="section-title light" data-site="atelier.title"></h2>
+        <p class="atelier-body" data-site="atelier.body"></p>
+        <div class="steps" data-steps></div>
+        <a class="btn btn-outline" data-wa="atelier" target="_blank" rel="noreferrer">
+          Ask about the craft
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pattern gallery -->
+  <section class="section section-sand">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow-text accent" data-site="patterns.eyebrow"></span>
+          <h2 class="section-title" data-site="patterns.title"></h2>
+        </div>
+        <p class="section-note" data-site="patterns.note"></p>
+      </div>
+      <div class="pattern-grid" data-patterns></div>
+    </div>
+  </section>
+
+  <!-- Bespoke -->
+  <section id="bespoke" class="section section-teal bespoke reveal">
+    <div class="container bespoke-inner">
+      <span class="eyebrow-text light" data-site="bespoke.eyebrow"></span>
+      <h2 class="section-title light center" data-site="bespoke.title"></h2>
+      <p class="bespoke-body" data-site="bespoke.body"></p>
+      <a class="btn btn-light" data-wa="bespoke" target="_blank" rel="noreferrer">
+        Begin a bespoke conversation
+      </a>
+      <p class="bespoke-note" data-site="bespoke.note"></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <img src="images/logo.jpeg" alt="ZELLART" class="footer-logo" />
+          <p class="footer-tagline" data-site="footer.tagline"></p>
+        </div>
+        <div>
+          <p class="footer-label">Explore</p>
+          <a href="#collection">Collection</a>
+          <a href="#atelier">The atelier</a>
+          <a href="#bespoke">Bespoke</a>
+        </div>
+        <div>
+          <p class="footer-label">Find us</p>
+          <a data-wa="footer" target="_blank" rel="noreferrer">WhatsApp the studio</a>
+          <a href="https://instagram.com/" target="_blank" rel="noreferrer">Instagram</a>
+          <span>Fez, Morocco</span>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© ZELLART — Made by hand</span>
+        <span>Tiles that remember the hand</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
